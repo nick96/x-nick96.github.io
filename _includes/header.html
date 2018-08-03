@@ -1,0 +1,31 @@
+<header>
+  <!-- {%- assign default_paths = site.pages | map: "path" -%} -->
+  {%- assign page_paths = site.header_pages -%}
+  <div class="row">
+    <div class="col s3">
+      <a href="{{ '/' | relative_url }}" style="color:#424242">
+	<h4>{{ site.title | escape }}</h5>
+      </a>
+    </div>
+
+    <div class="col s6"></div>
+
+    <div class="col s3">
+      <h5>
+	{%- assign prefix = "" -%}
+	{%- if page_paths -%}
+	    {%- for path in page_paths -%}
+		    {%- assign my_page = site.pages | where: "path", path | first -%}
+		    &nbsp{{ prefix }}&nbsp
+			{%- if my_page.title -%}
+			<a href="{{ my_page.url | relative_url }}" style="color:#bdbdbd">
+			  {{ my_page.title | escape }}
+			</a>
+		    {%- endif -%}
+		    {%- assign prefix = "|" -%}
+	    {%- endfor -%}
+	{%- endif -%}
+	</h5>
+    </div>
+  </div>
+</header>
