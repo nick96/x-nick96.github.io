@@ -1,0 +1,160 @@
+---
+title: Projects
+layout: page
+permalink: /projects/
+---
+
+<h2>Personal Projects</h2>
+
+<!-- libDNS -->
+<div class="card">
+  <span class="card-title">&nbsp;libDNS</span>
+  <div class="card-content">
+    libDNS is a C header library I am building for building and parsing
+    DNS requests and responses. The guiding principles for it are:
+
+    <ul class="browser-default">
+	<li>Simple</li>
+	<li>Fast</li>
+	<li>No dynamic allocation</li>
+    </ul>
+
+    The current goal is just to implement basic DNS resolving in
+    accordance with RFC 1035 but I hope to extend is with DNS over
+    HTTPS and DNSSEC in the future.
+
+  </div>
+  <div class="card-action">
+    <strong>Language:</strong> C<br>
+    <strong>Repo:</strong> <a href="https://github.com/nick96/dns-resolver">dns-resolver</a>
+  </div>
+</div>
+
+<!-- Conway's game of life -->
+<div class="card">
+  <span class="card-title">&nbsp;Conway's Game of Life</span>
+  <div class="card-content">
+    Conyway's Game of Life is
+    a <a href="https://en.wikipedia.org/wiki/Cellular_automaton">cellular
+      automaton</a> with the following rules:
+
+    <ul class="browser-default">
+      <li>Any live cell with fewer than two live neighbours dies</li>
+      <li>Any live cell with two or three live neighbours lives</li>
+      <li>Any live cell with more than three live neightbours dies</li>
+      <li>Any dead cell with exactly three live neighbors becomes a live cell</li>
+    </ul>
+
+    This rule set can produce some interesting patterns.
+
+    I modelled the rule set using C++ and created two viewing
+    interfaces.
+
+    <ol>
+      <li>Terminal view using the Ncurses library</li>
+      <li>Graphical view using SFML</li>
+    </ol>
+  </div>
+
+  <div class="card-action">
+    <span><strong>Language:</strong> C++</span><br>
+    <span><strong>Repo:</strong>
+      <a class="browser-default" href="https://github.com/nick96/game-of-life">
+	Game of Life
+      </a>
+    </span>
+  </div>
+</div>
+
+<!-- GroceryBudget android app -->
+<div class="card">
+    <span class="card-title">
+	&nbsp;GroceryBudget
+    </span>
+
+    <div class="card-content">
+	This is an Android app to help you keep track of how much
+	you're spending when doing your groceries. It allows you to
+	list the items you want to buy during your shop. Then as you
+	are shopping you can add their prices and tick them off. The
+	app will maintain a running count of how much you've spent.
+    </div>
+
+    <div class="card-action">
+	<strong>Language:</strong> Java<br>
+	<strong>Repo:</strong> <a href="https://github.com/nick96/GroceryBudget">GroceryBudget</a>
+    </div>
+</div>
+
+<!-- Flask Web App -->
+<div class="card">
+    <span class="card-title">
+	&nbsp;Flask Web App
+    </span>
+
+    <div class="card-content">
+	For an informatics class that I took at university, in a team
+	of two we built a we application which displays our findings
+	on the change in cost of living in Australia.  We gathered the
+	data from the Australian Bureau of Statistics then cleaned and
+	displayed it using Python. The website built using Flask
+	displays our conclusions from the data and evidence to support
+	them. Additionally, it includes a pivot table to allow the
+	user to gain their own insights from the data.
+    </div>
+
+    <div class="card-action">
+	<strong>Language:</strong> Python<br>
+	<strong>Repo:</strong> <a href="https://github.com/nick96/info20002-phase3">INFO20002 Phase 3</a>
+    </div>
+</div>
+
+<h2>Open-source Contributions</h2>
+
+<div class="card">
+    <span class="card-title">&nbsp;elm-mode</span>
+
+    <div class="card-content">
+	Here I fixed a bug where the tab completion in elm-mode was
+	inserting the wrong symbol for sum types. I added
+	functionality to check whether we were in a sum type.
+    </div>
+
+    <div class="card-action">
+	<a href="https://github.com/jcollard/elm-mode">Repo</a>
+	<a href="https://github.com/jcollard/elm-mode/commit/1a8c83d5f2d5c41000028a6d91f4a751e32ab97d">
+	    Commit
+	</a>
+    </div>
+</div>
+
+<div class="card">
+    <span class="card-title">&nbsp;KeePassXC</span>
+
+    <div class="card-content">
+	Here I fixed a bug there the password path was being shown
+	incorrectly after a particular sequence of actions. I also add
+	regressions tests to prevent it from occuring again.
+    </div>
+
+    <div class="card-action">
+	<a href="https://github.com/keepassxreboot/keepassxc">Repo</a>
+	<a href="https://github.com/keepassxreboot/keepassxc/pull/1478/files">Commit</a>
+    </div>
+</div>
+
+<div class="card">
+    <span class="card-title">&nbsp;cquery</span>
+
+    <div class="card-content">
+	Here I add the ability for cquery to use a global
+	configuration file, rather than having to always have one in
+	the project root.
+    </div>
+
+    <div class="card-action">
+	<a href="https://github.com/cquery-project/cquery">Repo</a>
+	<a href="https://github.com/cquery-project/cquery/commit/76a7ea6108a1ee4fb679cbe3974598032dc1d666">Commit</a>
+    </div>
+</div>
+
