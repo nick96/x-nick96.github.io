@@ -5,3 +5,34 @@ footer {
 a {
     color: #01579b;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+body {
+    font-family: 'Lora', serif;
+    font-size: 105%;
+}
+
+.post {
+    width: 60%;
+}
+
+
+.post h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+}
+
+.post h1 {
+    font-size: 200%;
+}
+
+.post h2 {
+    font-size: 175%;
+}
+
+.post h3 {
+    font-size: 150%;
+}
